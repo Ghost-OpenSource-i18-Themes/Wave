@@ -14,17 +14,17 @@
         <link>{{@site.url}}</link>
         <description>{{@site.description}}</description>
         <language>{{@site.locale}}</language>
-        <copyright>{{@site.title}} Copyright {{date format="YYYY"}}</copyright>
+        <copyright>{{@site.title}} {{t "Copyright"}} {{date format="YYYY"}}</copyright>
         <atom:link href="{{@site.url}}/rss/" rel="self" type="application/rss+xml" />
         <lastBuildDate>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}
         </lastBuildDate>
         <itunes:author>{{@site.title}}</itunes:author>
         <itunes:summary>{{@site.description}}</itunes:summary>
         <itunes:owner>
-            <itunes:name>Your Name</itunes:name>
+            <itunes:name>{{t "Your Name"}}</itunes:name>
             <itunes:email>youremail@example.com</itunes:email>
         </itunes:owner>
-        <itunes:explicit>clean</itunes:explicit>
+        <itunes:explicit>{{t "clean"}}</itunes:explicit>
         <itunes:image href="{{img_url @site.icon absolute="true"}}" />
         <itunes:category text="Technology"></itunes:category>
 
